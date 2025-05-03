@@ -16,6 +16,7 @@ import { Badge } from "@/components/ui/badge"
 import { syncGedWorkflows, getGedWorkflows } from "@/lib/api"
 import { useGedWorkflowStore } from "@/store/useGedWorkflowStore"
 
+
 export function WorkflowSelector() {
   const [searchQuery, setSearchQuery] = useState("")
   const [isSyncing, setIsSyncing] = useState(false)
@@ -60,7 +61,7 @@ export function WorkflowSelector() {
     console.log(selectedWorkflow)
   }
 
-  
+
 
   return (
     <div className="space-y-6">
